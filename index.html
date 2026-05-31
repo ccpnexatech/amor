@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover"/>
+  <meta name="theme-color" content="#0a0a0a"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-title" content="Amor"/>
+  <link rel="manifest" href="/manifest.json"/>
+  <link rel="apple-touch-icon" href="/icon.svg"/>
+  <title>para você · Chayanne</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Space+Mono:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/src/style.css"/>
+</head>
+<body>
+
+<div id="device-shell"><!-- desktop frame --></div>
+
+<div id="device">
+  <div id="screen">
+
+    <!-- Persistent UI -->
+    <div id="splash">
+      <div class="s-rings">
+        <div class="s-ring" style="--sz:200px;--d:0s"></div>
+        <div class="s-ring" style="--sz:300px;--d:.5s"></div>
+        <div class="s-ring" style="--sz:420px;--d:1s"></div>
+      </div>
+      <div class="s-heart rainbow-text" aria-hidden="true">♥</div>
+      <p class="s-sub">carregando memórias</p>
+    </div>
+
+    <div id="cursor" aria-hidden="true"></div>
+    <div id="prog-left" aria-hidden="true"></div>
+    <div id="prog-bottom" aria-hidden="true"></div>
+    <nav id="nav-dots" aria-label="Capítulos"></nav>
+
+    <!-- Scroll container -->
+    <main id="scroll-root">
+
+      <!-- ═══ CAPA ═══ -->
+      <section id="capa" data-ch="capa">
+        <canvas id="capa-canvas"></canvas>
+        <div class="ch-inner capa-inner">
+          <p class="ch-eyebrow reveal">para você</p>
+          <h1 class="capa-title rainbow-text reveal r1">
+            Chayanne.
+          </h1>
+          <div class="capa-rule rainbow-bg reveal r2"></div>
+          <p class="capa-sub reveal r3">uma história nossa,<br>do começo ao agora.</p>
+          <p class="capa-date reveal r4">30 · 05 · 2024</p>
+        </div>
+        <div class="scroll-arrow reveal r5" aria-hidden="true">
+          <svg width="18" height="40" viewBox="0 0 18 40" fill="none">
+            <line x1="9" y1="2" x2="9" y2="32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <polyline points="3,26 9,34 15,26" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </section>
+
+      <!-- ═══ CAP 1 — O PRIMEIRO OLHAR ═══ -->
+      <section id="cap1" data-ch="cap1">
+        <canvas id="embers-canvas"></canvas>
+        <div class="ch-inner">
+          <p class="ch-num reveal">I</p>
+          <h2 class="ch-title reveal r1">o primeiro<br><em>olhar.</em></h2>
+          <div class="ch-rule reveal r2"></div>
+          <div class="poem reveal r3">
+            havia uma forma<br>
+            no modo como você sorriu<br>
+            antes de saber<br>
+            que eu estava olhando.<br>
+            <br>
+            não foi o olhar —<br>
+            foi o depois do olhar.<br>
+            quando você abaixou os olhos<br>
+            e eu já estava<br>
+            <em>perdido.</em>
+          </div>
+          <p class="poem-end reveal r4">isso não se planeja.<br>isso acontece.</p>
+        </div>
+      </section>
+
+      <!-- ═══ CAP 2 — A ATRAÇÃO ═══ -->
+      <section id="cap2" data-ch="cap2">
+        <div id="field-lines" aria-hidden="true"></div>
+        <div class="ch-inner">
+          <p class="ch-num reveal">II</p>
+          <h2 class="ch-title reveal r1">a vontade<br><em>de chegar.</em></h2>
+          <div class="ch-rule reveal r2"></div>
+          <div class="poem reveal r3">
+            eu queria dizer algo inteligente.<br>
+            não disse.<br>
+            <br>
+            eu queria parecer<br>
+            descomplicado.<br>
+            não era.<br>
+            <br>
+            eu queria que você sentisse<br>
+            que eu era o tipo de pessoa<br>
+            que vale a pena conhecer.
+          </div>
+          <p class="poem-end reveal r4">era.<br>só não sabia<br>como mostrar.</p>
+        </div>
+      </section>
+
+      <!-- ═══ CAP 3 — POR QUÊ VOCÊ ═══ -->
+      <section id="cap3" data-ch="cap3">
+        <div id="orbits-bg" aria-hidden="true"></div>
+        <div class="ch-inner">
+          <p class="ch-num reveal">III</p>
+          <h2 class="ch-title reveal r1">por que<br><em>você.</em></h2>
+          <div class="ch-rule reveal r2"></div>
+          <ul class="reason-list">
+            <li class="reason reveal r2">
+              <span class="reason-mark">·</span>
+              porque você escuta<br>
+              de verdade — não enquanto<br>
+              pensa no que vai responder.
+            </li>
+            <li class="reason reveal r3">
+              <span class="reason-mark">·</span>
+              porque você ri de si mesma<br>
+              antes de rir dos outros.
+            </li>
+            <li class="reason reveal r4">
+              <span class="reason-mark">·</span>
+              porque você é corajosa<br>
+              das formas que ninguém vê.
+            </li>
+            <li class="reason reveal r5">
+              <span class="reason-mark">·</span>
+              porque do seu lado<br>
+              eu sou mais do que sou<br>
+              quando estou sozinho.
+            </li>
+          </ul>
+          <p class="poem-end reveal r6">por isso.<br>e por tantos outros<br>que eu ainda descubro.</p>
+        </div>
+      </section>
+
+      <!-- ═══ CAP 4 — LAGES ═══ -->
+      <section id="cap4" data-ch="cap4">
+        <div id="snow-cont" aria-hidden="true"></div>
+        <div class="ch-inner">
+          <p class="ch-num reveal">IV</p>
+          <h2 class="ch-title reveal r1">lages.<br><em>o frio que<br>aquecia.</em></h2>
+          <div class="ch-rule reveal r2"></div>
+          <div class="poem reveal r3">
+            lages não era um destino.<br>
+            <br>
+            era uma decisão —<br>
+            a de estar<br>
+            onde você estava.<br>
+            <br>
+            fez frio. geou no vidro.<br>
+            o vento cortava.
+          </div>
+          <div class="ice-line reveal r4"></div>
+          <div class="poem reveal r5">
+            e no entanto<br>
+            era o lugar mais quente<br>
+            que eu já estive.<br>
+            <br>
+            dois. uma casa.<br>
+            refeições simples.<br>
+            silêncios que não precisavam<br>
+            de nada.
+          </div>
+          <p class="poem-end reveal r6">
+            aprendi ali<br>
+            que casa não é um lugar.<br>
+            <em>é uma pessoa.</em>
+          </p>
+        </div>
+      </section>
+
+      <!-- ═══ CAP 5 — A TEMPESTADE ═══ -->
+      <section id="cap5" data-ch="cap5">
+        <div id="rain-cont" aria-hidden="true"></div>
+        <div class="lightning-over" aria-hidden="true"></div>
+        <div class="ch-inner">
+          <p class="ch-num reveal">V</p>
+          <h2 class="ch-title reveal r1">a<br><em>tempestade.</em></h2>
+          <div class="ch-rule reveal r2"></div>
+          <div class="poem reveal r3">
+            tivemos dias ruins.<br>
+            <br>
+            eu tive dias ruins —<br>
+            e joguei tudo em você.<br>
+            <br>
+            palavras que não eram sobre você.<br>
+            um tom que você<br>
+            não merecia.<br>
+            um peso que era meu<br>
+            e que eu te fiz carregar.
+          </div>
+          <p class="poem-end reveal r4">eu sei o que fiz.</p>
+        </div>
+      </section>
+
+      <!-- ═══ CAP 6 — O ESPELHO ═══ -->
+      <section id="cap6" data-ch="cap6">
+        <div class="mirror-bg" aria-hidden="true"></div>
+        <div class="ch-inner">
+          <p class="ch-num reveal">VI</p>
+          <h2 class="ch-title reveal r1">o<br><em>espelho.</em></h2>
+          <div class="ch-rule reveal r2"></div>
+          <div class="poem reveal r3">
+            houve um momento<br>
+            em que eu me vi de fora.<br>
+            <br>
+            e o que eu vi<br>
+            não era bom.<br>
+            <br>
+            distante quando precisava estar perto.<br>
+            ausente quando você me chamava.<br>
+            frio onde deveria haver calor.
+          </div>
+          <div class="crack-line reveal r4" aria-hidden="true"></div>
+          <div class="poem reveal r5">
+            você me amou<br>
+            de um jeito que eu<br>
+            não soube honrar.<br>
+            <br>
+            não por falta de amor.<br>
+            <em>por falta de coragem.</em>
+          </div>
+          <p class="poem-end mirror-end reveal r6" data-text="não merecia você.">não merecia você.</p>
+        </div>
+      </section>
+
+      <!-- ═══ CAP 7 — A VOLTA ═══ -->
+      <section id="cap7" data-ch="cap7">
+        <div class="dawn-bg" aria-hidden="true"></div>
+        <div class="ch-inner">
+          <p class="ch-num reveal">VII</p>
+          <h2 class="ch-title reveal r1">a<br><em>volta.</em></h2>
+          <div class="ch-rule reveal r2"></div>
+          <div class="poem reveal r3">
+            tem coisas<br>
+            que só se entende<br>
+            quando se está de volta.<br>
+            <br>
+            não me arrependo<br>
+            do que foi difícil —<br>
+            me arrependo de ter demorado<br>
+            a entender o que precisava mudar.
+          </div>
+          <div class="dawn-line reveal r4" aria-hidden="true"></div>
+          <div class="poem reveal r5">
+            não foi você que errou.<br>
+            <em>fui eu que precisava crescer.</em><br>
+            <br>
+            e crescimento sem dor<br>
+            não costuma acontecer.
+          </div>
+          <p class="poem-end reveal r6">mas estou aqui.<br>diferente. tentando.</p>
+        </div>
+      </section>
+
+      <!-- ═══ CAP 8 — A ESCOLHA ═══ -->
+      <section id="cap8" data-ch="cap8">
+        <div id="gold-particles" aria-hidden="true"></div>
+        <div class="ch-inner">
+          <p class="ch-num reveal">VIII</p>
+          <h2 class="ch-title reveal r1">a<br><em>escolha.</em></h2>
+          <div class="ch-rule reveal r2"></div>
+          <div class="poem reveal r3">
+            posso evoluir.<br>
+            <br>
+            mas evoluir sem você<br>
+            não é evolução —<br>
+            é só movimento<br>
+            sem direção.<br>
+            <br>
+            você não é minha metade.<br>
+            você é o motivo<br>
+            pelo qual quero<br>
+            <em>ser inteiro.</em>
+          </div>
+          <p class="poem-end choice-end reveal r4">
+            então a escolha é clara.<br>
+            crescer com você.<br>
+            <em>ou não crescer.</em>
+          </p>
+          <p class="poem-end choice-final reveal r5">
+            e eu não quero parar.<br>
+            <strong>nunca mais.</strong>
+          </p>
+        </div>
+      </section>
+
+      <!-- ═══ FIM — A CARTA ═══ -->
+      <section id="fim" data-ch="fim">
+        <div id="hearts-cont" aria-hidden="true"></div>
+        <div class="ch-inner fim-inner">
+          <p class="fim-eyebrow reveal">hoje</p>
+          <p class="fim-label reveal r1">juntos há</p>
+          <div class="fim-counter rainbow-text reveal r2">
+            <span id="day-num">0</span>
+          </div>
+          <p class="fim-dias reveal r3">dias</p>
+
+          <div class="fim-divider reveal r4"></div>
+
+          <div class="fim-letter reveal r5">
+            não sou bom com palavras.<br>
+            então fiz isso.<br>
+            <br>
+            cada capítulo aqui<br>
+            é uma parte minha<br>
+            que só existe porque você existe.
+          </div>
+
+          <div class="fim-nome-wrap reveal r6">
+            <span class="fim-nome rainbow-text">Chayanne.</span>
+          </div>
+
+          <div class="fim-heart reveal r6" aria-hidden="true">♥</div>
+          <p class="fim-data reveal r6">30 · 05 · 2024 · fortaleza</p>
+        </div>
+      </section>
+
+    </main><!-- /scroll-root -->
+  </div><!-- /screen -->
+</div><!-- /device -->
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
